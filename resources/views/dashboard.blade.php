@@ -47,10 +47,10 @@
                     <!-- ============================================================== -->
                     <a class="navbar-brand" href="dashboard.html">
                         <!-- Logo icon -->
-                        <b class="logo-icon">
-                            <!-- Dark Logo icon -->
+                         <!--<b class="logo-icon">
+                            
                             <img src="plugins/images/logo-icon.png" alt="homepage" />
-                        </b>
+                        </b>-->
                         <!--End Logo icon -->
                         <!-- Logo text -->
                        
@@ -113,14 +113,14 @@
                     <ul id="sidebarnav">
                         <!-- User Profile-->
                         <li class="sidebar-item pt-2">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="dashboard.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="dashboard"
                                 aria-expanded="false">
                                 <i class="far fa-clock" aria-hidden="true"></i>
                                 <span class="hide-menu">Dashboard</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="create"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="package"
                                 aria-expanded="false">
                                 <i class="fa fa-columns" aria-hidden="true"></i>
                                 <span class="hide-menu">Create Package</span>
@@ -140,15 +140,21 @@
                                 <span class="hide-menu">Manage Booking</span>
                             </a>
                         </li>
-                       
-                       
                         <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="manage.html"
+                                aria-expanded="false">
+                                <i class="fa fa-table" aria-hidden="true"></i>
+                                <span class="hide-menu">Manage Issues</span>
+                            </a>
+                        </li>
+                       
+                      <!--   <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="404.html"
                                 aria-expanded="false">
                                 <i class="fa fa-info-circle" aria-hidden="true"></i>
                                 <span class="hide-menu">Error 404</span>
                             </a>
-                        </li>
+                        </li>-->
                       
                     </ul>
 
@@ -189,40 +195,40 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-12">
                         <div class="white-box analytics-info">
-                            <h3 class="box-title">Total Visit</h3>
+                            <h3 class="box-title">Total packages</h3>
                             <ul class="list-inline two-part d-flex align-items-center mb-0">
                                 <li>
                                     <div id="sparklinedash"><canvas width="67" height="30"
                                             style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
                                     </div>
                                 </li>
-                                <li class="ms-auto"><span class="counter text-success">659</span></li>
+                                <li class="ms-auto"><span class="counter text-success"></span></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
                         <div class="white-box analytics-info">
-                            <h3 class="box-title">Total Page Views</h3>
+                            <h3 class="box-title">Total Bookings</h3>
                             <ul class="list-inline two-part d-flex align-items-center mb-0">
                                 <li>
                                     <div id="sparklinedash2"><canvas width="67" height="30"
                                             style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
                                     </div>
                                 </li>
-                                <li class="ms-auto"><span class="counter text-purple">869</span></li>
+                                <li class="ms-auto"><span class="counter text-purple"></span></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
                         <div class="white-box analytics-info">
-                            <h3 class="box-title">Unique Visitor</h3>
+                            <h3 class="box-title">Total issues</h3>
                             <ul class="list-inline two-part d-flex align-items-center mb-0">
                                 <li>
                                     <div id="sparklinedash3"><canvas width="67" height="30"
                                             style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
                                     </div>
                                 </li>
-                                <li class="ms-auto"><span class="counter text-info">911</span>
+                                <li class="ms-auto"><span class="counter text-info"></span>
                                 </li>
                             </ul>
                         </div>

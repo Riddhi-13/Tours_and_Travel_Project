@@ -9,9 +9,9 @@ Route::get('/', function () {
     return view('hello');
 });
 
-//Route::post("users",[UsersController::class,'getData']);
-Route::view("login","users");
+
+
 Route::view("home","home");
-Route::view('create','createpackage');
-Route::post('create',[PackageController::class,'store']);
+Route::get('/package',[PackageController::class,'index']);
+Route::post('/addimage',[PackageController::class,'store'])->name('addimage');
 Route::view("dashboard","dashboard");

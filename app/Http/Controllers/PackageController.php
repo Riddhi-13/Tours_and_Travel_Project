@@ -7,30 +7,35 @@ use App\Models\Package;
 
 class PackageController extends Controller
 {
-    public function store(Request $req)
+    public function index()
     {
-        if ($req->hasFile('file')) {
-            $req->validate([
-                'image' => 'mimes:jpeg,bmp,png' // Only allow .jpg, .bmp and .png file types.
-            ]);
-             // Save the file locally in the storage/public/ folder under a new folder named /product
-             $req->file->store('package', 'public');
-        $package= new Package([
-            "package_name" => $req->get('package_name'),
-            "package_type" => $req->get('package_type'),
-            "package_location" => $req->get('package_location'),
-            "package_price" => $req->get('package_price'),
-            "package_features" => $req->get('package_features'),
-            "package_details" => $req->get('package_details'),
-            "package_image" => $req->file->hashName()
-          
-        ]);
-       
-       
-            $package->save(); // Finally, save the record.
+        return view('package');
+    }
+  public function store(Request $req)
+    {
+        
+        $package= new Package();
+        $package->package_name=$req->input('package_name');
+        $package->package_type=$req->input('package_type');
+        $package->package_location=$req->input('package_location');
+        $package->package_price=$req->input('package_price');
+        $package->package_features=$req->input('package_features');
+        $package->package_details=$req->input('package_details');
+        
+        if($req->hasfile('package_image')){
+            $file=$req->file('package_image');
+            $extension=$file->getClientOriginalExtension();
+            $filename=time() . '.' . $extension;
+            $file->move('uploads/package/',$filename);
+            $package->package_image=$filename;
+        }else{
+            return $req;
+            $package->package_image = '';
         }
-
-        return redirect('create');
+        
+        
+        $package->save();
+        return view('/package')->with('package',$package);
 
 
     }

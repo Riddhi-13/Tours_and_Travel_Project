@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Package extends Model
 {
-    use HasFactory;
-    public $timestamps=false;
+    protected $table='packages';
+    protected $fillable=['package_name','package_type','package_location','package_price','package_features','package_details','package_image'];
+    
 }

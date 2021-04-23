@@ -17,13 +17,15 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tour Packages <span class="caret"></span></a>
+      <li class="active2"><a href="#">Tour Packages</a></li>
+      <!--<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tour Packages
+      <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="#">Page 1-1</a></li>
           <li><a href="#">Page 1-2</a></li>
           <li><a href="#">Page 1-3</a></li>
         </ul>
-      </li>
+      </li>-->
       <li><a href="#">Contact Us</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
@@ -32,4 +34,24 @@
     </ul>
   </div>
 </nav>
+<body>
+<div style="margin-left:1px; margin-right:0px" >
+<div class="mycarousel" style=" padding-top: 0px;">
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    
+
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/3.jpg" class="d-block w-100" alt="..."  style=" height: 555px;width:1500px;" >
+     
+   
+  </div>
   
+</div>
+</div>
+</div>
+
+</body>
