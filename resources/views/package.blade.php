@@ -120,14 +120,14 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="create"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="package"
                                 aria-expanded="false">
                                 <i class="fa fa-columns" aria-hidden="true"></i>
                                 <span class="hide-menu">Create Package</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="update.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="updatePackage"
                                 aria-expanded="false">
                                 <i class="fa fa-columns" aria-hidden="true"></i>
                                 <span class="hide-menu">Update Package</span>
@@ -193,33 +193,33 @@
                               <div class="form-group">
                               <label for="package_name">Package Name</label>
                              
-                              <input type="text" class="form-control" name="package_name" aria-describedby="package_name" placeholder="Enter package name">
+                              <input type="text" class="form-control" name="package_name" aria-describedby="package_name" placeholder="Enter package name" required>
                               
                               </div>
                               <div class="form-group">
                               <label for="package_type">Package Type</label>
-                              <input type="text" class="form-control" name="package_type" placeholder="Enter package type">
+                              <input type="text" class="form-control" name="package_type" placeholder="Enter package type" required>
                               </div>
                               <div class="form-group">
                               <label for="package_location">Package Location</label>
-                              <input type="text" class="form-control" name="package_location" placeholder="Enter package location">
+                              <input type="text" class="form-control" name="package_location" placeholder="Enter package location" required>
                               </div>
                               <div class="form-group">
                               <label for="package_price">Package Price</label>
-                              <input type="text" class="form-control" name="package_price" placeholder="Enter package price">
+                              <input type="text" class="form-control" name="package_price" placeholder="Enter package price"required>
                               </div>
                               <div class="form-group">
                               <label for="package_features">Package Features</label>
-                              <input type="text" class="form-control" name="package_features" placeholder="Enter package features">
+                              <input type="text" class="form-control" name="package_features" placeholder="Enter package features"required>
                               </div>
                               <div class="form-group">
                               <label for="package_details">Package Details</label>
-                              <textarea class="form-control" name="package_details" rows="4" placeholder="Enter package details"></textarea>
+                              <textarea class="form-control" name="package_details" rows="4" placeholder="Enter package details" required></textarea>
                               
                               </div>
                               <div class="form-group">
                               <label for="package_image">Package Image</label>
-                              <input type="file" class="form-control-file" name="package_image">
+                              <input type="file" class="form-control-file" name="package_image" required >
                               </div>
                               <button type="submit" class="btn btn-primary"style="padding: 5px 50px;font-size:18px;">Create</button>
                               <button type="reset" class="btn-inverse btn" style="padding: 5px 50px;font-size:18px;">Reset</button>

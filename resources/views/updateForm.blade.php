@@ -14,12 +14,10 @@
     <title>Admin</title>
     <link rel="canonical" href="https://www.wrappixel.com/templates/ample-admin-lite/" />
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
-   
-    
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('plugins/images/favicon.png')}}">
     <!-- Custom CSS -->
   
-    <link href="{{ asset('css/style.min.css')}}" rel="stylesheet">
+   <link href="{{ asset('css/style.min.css')}}" rel="stylesheet">
 </head>
 
 <body>
@@ -43,22 +41,17 @@
         <header class="topbar" data-navbarbg="skin5">
             <nav class="navbar top-navbar navbar-expand-md navbar-dark">
                 <div class="navbar-header" data-logobg="skin6">
-                    <!-- ============================================================== -->
-                    <!-- Logo -->
-                    <!-- ============================================================== -->
+                   
                     <a class="navbar-brand" href="dashboard.html">
-                        <!-- Logo icon -->
-                         <!--<b class="logo-icon">
-                            
-                            <img src="plugins/images/logo-icon.png" alt="homepage" />
-                        </b>-->
-                        <!--End Logo icon -->
-                        <!-- Logo text -->
                        
+                        <!-- Logo text -->
+                        <span class="logo-text">
+                            
+                            <!--<img src="plugins/images/logo-text.png" alt="homepage" />  -->
+                            
+                        </span>
                     </a>
-                    <!-- ============================================================== -->
-                    <!-- End Logo -->
-                    <!-- ============================================================== -->
+                   
                     <!-- ============================================================== -->
                     <!-- toggle and nav items -->
                     <!-- ============================================================== -->
@@ -69,7 +62,12 @@
                 <!-- End Logo -->
                 <!-- ============================================================== -->
                 <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
-                   
+                    <ul class="navbar-nav d-none d-md-block d-lg-none">
+                        <li class="nav-item">
+                            <a class="nav-toggler nav-link waves-effect waves-light text-white"
+                                href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                        </li>
+                    </ul>
                     <!-- ============================================================== -->
                     <!-- Right side toggle and nav items -->
                     <!-- ============================================================== -->
@@ -134,23 +132,23 @@
                                 <span class="hide-menu">Manage Package</span>
                             </a>
                         </li>
+                       
+                       
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="manage"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="manage.html"
                                 aria-expanded="false">
                                 <i class="fa fa-table" aria-hidden="true"></i>
                                 <span class="hide-menu">Manage Booking</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="manage.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="404.html"
                                 aria-expanded="false">
-                                <i class="fa fa-table" aria-hidden="true"></i>
-                                <span class="hide-menu">Manage Issues</span>
+                                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                <span class="hide-menu">Error 404</span>
                             </a>
                         </li>
-                       
-                     
-                      
+                        
                     </ul>
 
                 </nav>
@@ -164,16 +162,15 @@
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
-        <div class="page-wrapper">
+        <div class="page-wrapper" style="min-height: 250px;">
             <!-- ============================================================== -->
             <!-- Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
             <div class="page-breadcrumb bg-white">
                 <div class="row align-items-center">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Dashboard</h4>
+                        <h4 class="page-title">Update Package</h4>
                     </div>
-                   
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -185,57 +182,73 @@
             <!-- ============================================================== -->
             <div class="container-fluid">
                 <!-- ============================================================== -->
-                <!-- Three charts -->
+                <!-- Start Page Content -->
                 <!-- ============================================================== -->
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-12">
-                        <div class="white-box analytics-info">
-                            <h3 class="box-title">Total packages</h3>
-                            <ul class="list-inline two-part d-flex align-items-center mb-0">
-                                <li>
-                                    <div id="sparklinedash"><canvas width="67" height="30"
-                                            style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
-                                    </div>
-                                </li>
-                                <li class="ms-auto"><span class="counter text-success"></span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="white-box analytics-info">
-                            <h3 class="box-title">Total Bookings</h3>
-                            <ul class="list-inline two-part d-flex align-items-center mb-0">
-                                <li>
-                                    <div id="sparklinedash2"><canvas width="67" height="30"
-                                            style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
-                                    </div>
-                                </li>
-                                <li class="ms-auto"><span class="counter text-purple"></span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="white-box analytics-info">
-                            <h3 class="box-title">Total issues</h3>
-                            <ul class="list-inline two-part d-flex align-items-center mb-0">
-                                <li>
-                                    <div id="sparklinedash3"><canvas width="67" height="30"
-                                            style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
-                                    </div>
-                                </li>
-                                <li class="ms-auto"><span class="counter text-info"></span>
-                                </li>
-                            </ul>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                        <form action="/updateimage/{{$packages->id}}" method="POST" enctype="multipart/form-data">
+                            {{csrf_field()}}
+                            {{method_field('PUT')}}
+                            <input type="hidden"class="form-control" name="id" id="id" value="{{$packages->id}}">
+
+                            <div class="form-group">
+                            <label for="package_name">Package Name</label>
+                            <input type="text" class="form-control" name="package_name" value="{{$packages->package_name}}" placeholder="Enter package name" required>
+                            </div>
+
+                            <div class="form-group">
+                            <label for="package_type">Package Type</label>
+                            <input type="text" class="form-control" name="package_type" value="{{$packages->package_type}}" placeholder="Enter package type" required>
+                            </div>
+
+                            <div class="form-group">
+                            <label for="package_location">Package Location</label>
+                            <input type="text" class="form-control" name="package_location" value="{{$packages->package_location}}" placeholder="Enter package location" required>
+                            </div>
+
+                            <div class="form-group">
+                            <label for="package_price">Package Price</label>
+                            <input type="text" class="form-control" name="package_price" value="{{$packages->package_price}}"placeholder="Enter package price"required>
+                            </div>
+
+                            <div class="form-group">
+                            <label for="package_features">Package Features</label>
+                            <input type="text" class="form-control" name="package_features" value="{{$packages->package_features}}" placeholder="Enter package features"required>
+                            </div>
+
+                            <div class="form-group">
+                            <label for="package_details">Package Details</label>
+                            <textarea type="text" class="form-control" rows="4" name="package_details" placeholder="Enter package details" required> {{$packages->package_details}}</textarea>
+                            </div>
+
+                            <div class="form-group">
+                            <label for="package_image">Package Image</label>
+                            <input type="file" class="form-control-file" name="package_image" >{{$packages->package_image}}
+                            </div>
+
+                            <button type="submit" class="btn btn-primary"style="padding: 5px 50px;font-size:18px;">Update</button>
+                            
+
+                            </form>
                         </div>
                     </div>
                 </div>
-              
-               
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Right sidebar -->
+                <!-- ============================================================== -->
+                <!-- .right-sidebar -->
+                <!-- ============================================================== -->
+                <!-- End Right sidebar -->
+                <!-- ============================================================== -->
             </div>
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
             <!-- ============================================================== -->
-          
+           
         </div>
         <!-- ============================================================== -->
         <!-- End Page wrapper  -->
@@ -247,22 +260,17 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    "{{ asset('css/style.min.css')}}"
+    <script src="{{ asset('plugins/bower_components/jquery/dist/jquery.min.js')}}"></script>
     <!-- Bootstrap tether Core JavaScript -->
-    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/app-style-switcher.js"></script>
-    <script src="plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="{{ asset('bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{ asset('js/app-style-switcher.js')}}"></script>
     <!--Wave Effects -->
-    <script src="js/waves.js"></script>
+    <script src="{{ asset('js/waves.js')}}"></script>
     <!--Menu sidebar -->
-    <script src="js/sidebarmenu.js"></script>
+    <script src="{{ asset('js/sidebarmenu.js')}}"></script>
     <!--Custom JavaScript -->
-    <script src="js/custom.js"></script>
-    <!--This page JavaScript -->
-    <!--chartis chart-->
-    <script src="plugins/bower_components/chartist/dist/chartist.min.js"></script>
-    <script src="plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
-    <script src="js/pages/dashboards/dashboard1.js"></script>
+    <script src="{{ asset('js/custom.js')}}"></script>
 </body>
 
 </html>

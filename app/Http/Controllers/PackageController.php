@@ -11,6 +11,7 @@ class PackageController extends Controller
     {
         return view('package');
     }
+    
   public function store(Request $req)
     {
         
@@ -36,12 +37,50 @@ class PackageController extends Controller
         
         $package->save();
         return view('/package')->with('package',$package);
-
-
     }
+
+        public function display()
+        {
+            $packages=package::all();
+            return view('updatePackage')->with('packages',$packages);
+           
+        }
+
+
+        public function edit($id)
+        {
+            $packages=package::find($id);
+            return view('updateForm')->with('packages',$packages);
+           
+        }
+
+        
+        public function update(Request $req, $id)
+        {
+            $packages=package::find($id);
+           
+            $packages->package_name=$req->input('package_name');
+            $packages->package_type=$req->input('package_type');
+            $packages->package_location=$req->input('package_location');
+            $packages->package_price=$req->input('package_price');
+            $packages->package_features=$req->input('package_features');
+            $packages->package_details=$req->input('package_details');
+
+            if($req->hasfile('package_image')){
+                $file=$req->file('package_image');
+                $extension=$file->getClientOriginalExtension();
+                $filename=time() . '.' . $extension;
+                $file->move('uploads/package/',$filename);
+                $packages->package_image=$filename;
+           
+        }
+        $packages->save();
+        return redirect('/updatePackage')->with('packages',$packages);
+    }
+
        
         
-       
+}
         
     
-}
+
