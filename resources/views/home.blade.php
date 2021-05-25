@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="css/view.css" />
   </head>
 
 <body>
@@ -88,6 +89,44 @@
     </a>
   </div>
 </div>
+
+
+
+
+<div class="container">
+
+<div class="holiday">
+
+<h3>Packages</h3>
+
+
+  <div class="rom-btm">
+    <div class="container">
+    @foreach($packages as $item)
+      <div class="rom-btm">
+        <div class="col-md-3 room-left  ">
+          <img src="{{ asset('uploads/package/' . $item ->package_image) }}" class="img-responsive" style="height: 154px;
+    width: 255px;" alt="Image not found">
+        </div>
+        <div class="col-md-6 room-midle "  style="font-size: 13px;">
+          <p> <b>Package Name: </b>{{$item['package_name']}}</p>
+          <p> <b>Package Type: </b> {{$item['package_type']}}</p>
+          <p><b>Location :</b> {{$item['package_location']}}</p>
+        </div>
+        <div class="col-md-3 room-right  ">
+          <h5 style="font-size: 15px; font-weight:bold;     margin-bottom: 25px;"> ₹: {{$item['package_price']}}/-</h5>
+         <a href="detail/{{$item['id']}}" class="view"><button class="btn btn-primary" >Detail</button></a>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      @endforeach
+    </div>
+  </div>
+  <div><a href="view" class="view" style="margin-left:43%; "><button class="btn btn-primary">  View More </button></a></div>
+  </div>
+  <div class="clearfix"></div>
+  </div>
+
 
 </body>
 

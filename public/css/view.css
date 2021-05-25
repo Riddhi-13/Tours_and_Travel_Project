@@ -1,0 +1,41 @@
+.rom-btm{
+    margin-bottom:22px;
+  }
+  .holiday {
+      padding: 2em 0;
+  }
+  .heading{
+    margin-bottom: 30px;
+      margin-top: 20px;
+  }
+  .holiday h3 {
+      font-size: 2em;
+      font-weight: 700;
+      text-align:center;
+      margin-top: 20px;
+  }
+  .selectroom_top {
+      padding: 1em;
+  }
+  .room-midle p{
+      padding: 10px;
+  
+  }
+  .selectroom_left {
+      padding: 0;
+      margin-bottom: 1.5em;
+  }
+  .selectroom_right {
+   margin-left: 38px;
+  }
+  .selectroom_right p {
+  
+      font-size: 20px;
+      margin-top: 26px;
+  }
+  .holiday p {
+      font-size: 1.2em;
+      line-height: 0.8em;
+      margin: 1em 0;
+      
+  }
