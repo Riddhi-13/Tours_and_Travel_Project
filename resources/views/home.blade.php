@@ -18,8 +18,8 @@
       <a class="navbar-brand" href="#">Travels</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li class="active2"><a href="#">Tour Packages</a></li>
+      <li class="active"><a href="home">Home</a></li>
+      <li class="active2"><a href="view">Tour Packages</a></li>
      
       <li><a href="#">Contact Us</a></li>
     </ul>
@@ -65,7 +65,7 @@
     <div class="carousel-inner">
 
       <div class="item active">
-        <img src="images/1.jpg" alt="Los Angeles" style="width:100%;height: 550px;">
+        <img src="img/1.jpg" alt="Los Angeles" style="width:100%;height: 550px;">
         <div class="carousel-caption">
           <h3>Los Angeles</h3>
           <p>LA is always so much fun!</p>
@@ -73,7 +73,7 @@
       </div>
 
       <div class="item">
-        <img src="images/2.jpg" alt="Chicago" style="width:100%;height: 550px;">
+        <img src="img/2.jpg" alt="Chicago" style="width:100%;height: 550px;">
         <div class="carousel-caption">
           <h3>Chicago</h3>
           <p>Thank you, Chicago!</p>
@@ -81,7 +81,7 @@
       </div>
     
       <div class="item">
-        <img src="images/3.jpg" alt="New York" style="width:100%;height: 550px;">
+        <img src="img/3.jpg" alt="New York" style="width:100%;height: 550px;">
         <div class="carousel-caption">
           <h3>New York</h3>
           <p>We love the Big Apple!</p>
@@ -101,7 +101,19 @@
     </a>
   </div>
 </div>
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> Travels.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 </body>
+
 
 </html>

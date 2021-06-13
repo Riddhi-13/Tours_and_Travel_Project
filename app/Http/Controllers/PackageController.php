@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Package;
+use App\Models\Booking;
+use Auth;
 
 class PackageController extends Controller
 {
@@ -11,7 +13,8 @@ class PackageController extends Controller
     {
         return view('package');
     }
-    
+   
+   
   public function store(Request $req)
     {
         
@@ -36,8 +39,13 @@ class PackageController extends Controller
         
         
         $package->save();
-        return view('/package')->with('package',$package);
+        
+        return back()->with('message','Inserted successfully',$package);
     }
+
+    
+    
+
 
         public function display()
         {
@@ -75,12 +83,105 @@ class PackageController extends Controller
            
         }
         $packages->save();
-        return redirect('/updatePackage')->with('packages',$packages);
+        return redirect('/updatePackage')->with('message','Updated successfully',$packages);
+        
     }
 
+       public function delete($id)
+       {
+           $packages=package::find($id);
+           $packages->delete();
+
+           return redirect('/updatePackage')->with('message','Deleted successfully',$packages);
+           
+       }
+
+       public function index2($id)
+       {
+        $packages=package::find($id);
+           return view('/bookTour')->with('packages',$packages);
+       }
+      
+
+       public function addBooking(Request $req)
+       {
+           if(Auth::guest())
+           {
+               return redirect('/newlog');
+           }
+           $booking= new Booking();
+          
+           $booking->packages_id=$req->input('packages_id');
+          
+          $booking->user_id =Auth::user()->id;
+          $booking->package_name=$req->input('package_name');
+           $booking->from=$req->input('from');
+           $booking->to=$req->input('to');
+           $booking->adults=$req->input('adults');
+           $booking->children=$req->input('children');
+           $booking->email=$req->input('email');
+           $booking->phone=$req->input('phone');
+           
+        
+         /*   $booking->packages()->associate($package); */
+           $booking->save();
+         
+           
+           return back()->with('message','Booked successfully',$booking);
+       }
+
+       public function display2()
+       {
+           $bookings=Booking::all();
+           return view('bookingDisplay')->with('bookings',$bookings);
+          
+       }
+
+      
+
+       public function edit2($id)
+        {
+            $bookings=Booking::find($id);
+            return view('bookingForm')->with('bookings',$bookings);
+           
+        }
+
+        public function update2(Request $req, $id)
+        {
+            $bookings=Booking::find($id);
+           
+            $bookings->status=$req->input('status');
+           
+            $bookings->save();
+            return redirect('/bookingDisplay')->with('message','Updated successfully',$bookings);
+        
+        }
+        public function viewTicket()
+        {
+            if(Auth::guest())
+           {
+               return redirect('/newlog');
+           }
+        
+            $bookings = Booking::where('user_id', Auth::user()->id)->paginate(10);
+           
+            return view('historyDisplay')->with('bookings',$bookings);
+        
+        }
+
+        public function delete2($id)
+       {
+           $bookings=Booking::find($id);
+           $bookings->delete();
+
+           return redirect('/historyDisplay')->with('message','Cancelled successfully',$bookings);
+           
+       }
+
+       }
        
         
-}
+
         
     
 
