@@ -8,10 +8,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<<<<<<< HEAD
-=======
-  <link type="text/css" rel="stylesheet" href="css/view.css" />
->>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
   </head>
 
 <body>
@@ -22,18 +18,12 @@
       <a class="navbar-brand" href="#">Travels</a>
     </div>
     <ul class="nav navbar-nav">
-<<<<<<< HEAD
       <li class="active"><a href="home">Home</a></li>
       <li class="active2"><a href="view">Tour Packages</a></li>
-=======
-      <li class="active"><a href="#">Home</a></li>
-      <li class="active2"><a href="#">Tour Packages</a></li>
->>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
      
       <li><a href="#">Contact Us</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-<<<<<<< HEAD
     @guest
       <li><a href="newReg"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
       <li><a href="newlog"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -49,10 +39,6 @@
                 </ul>
               </li>
               @endguest
-=======
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
->>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
     </ul>
   </div>
 </nav>
@@ -79,11 +65,7 @@
     <div class="carousel-inner">
 
       <div class="item active">
-<<<<<<< HEAD
         <img src="img/1.jpg" alt="Los Angeles" style="width:100%;height: 550px;">
-=======
-        <img src="images/1.jpg" alt="Los Angeles" style="width:100%;height: 550px;">
->>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
         <div class="carousel-caption">
           <h3>Los Angeles</h3>
           <p>LA is always so much fun!</p>
@@ -91,11 +73,7 @@
       </div>
 
       <div class="item">
-<<<<<<< HEAD
         <img src="img/2.jpg" alt="Chicago" style="width:100%;height: 550px;">
-=======
-        <img src="images/2.jpg" alt="Chicago" style="width:100%;height: 550px;">
->>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
         <div class="carousel-caption">
           <h3>Chicago</h3>
           <p>Thank you, Chicago!</p>
@@ -103,11 +81,7 @@
       </div>
     
       <div class="item">
-<<<<<<< HEAD
         <img src="img/3.jpg" alt="New York" style="width:100%;height: 550px;">
-=======
-        <img src="images/3.jpg" alt="New York" style="width:100%;height: 550px;">
->>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
         <div class="carousel-caption">
           <h3>New York</h3>
           <p>We love the Big Apple!</p>
@@ -127,7 +101,6 @@
     </a>
   </div>
 </div>
-<<<<<<< HEAD
 <!-- Footer -->
 <footer class="page-footer font-small blue">
 
@@ -143,47 +116,4 @@
 </body>
 
 
-=======
-
-
-
-
-<div class="container">
-
-<div class="holiday">
-
-<h3>Packages</h3>
-
-
-  <div class="rom-btm">
-    <div class="container">
-    @foreach($packages as $item)
-      <div class="rom-btm">
-        <div class="col-md-3 room-left  ">
-          <img src="{{ asset('uploads/package/' . $item ->package_image) }}" class="img-responsive" style="height: 154px;
-    width: 255px;" alt="Image not found">
-        </div>
-        <div class="col-md-6 room-midle "  style="font-size: 13px;">
-          <p> <b>Package Name: </b>{{$item['package_name']}}</p>
-          <p> <b>Package Type: </b> {{$item['package_type']}}</p>
-          <p><b>Location :</b> {{$item['package_location']}}</p>
-        </div>
-        <div class="col-md-3 room-right  ">
-          <h5 style="font-size: 15px; font-weight:bold;     margin-bottom: 25px;"> ₹: {{$item['package_price']}}/-</h5>
-         <a href="detail/{{$item['id']}}" class="view"><button class="btn btn-primary" >Detail</button></a>
-        </div>
-        <div class="clearfix"></div>
-      </div>
-      @endforeach
-    </div>
-  </div>
-  <div><a href="view" class="view" style="margin-left:43%; "><button class="btn btn-primary">  View More </button></a></div>
-  </div>
-  <div class="clearfix"></div>
-  </div>
-
-
-</body>
-
->>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
 </html>

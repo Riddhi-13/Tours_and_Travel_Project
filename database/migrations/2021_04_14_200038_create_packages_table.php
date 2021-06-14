@@ -14,11 +14,7 @@ class CreatePackagesTable extends Migration
     public function up()
     {
         Schema::create('packages', function (Blueprint $table) {
-<<<<<<< HEAD
             $table->increments('id')->nullable();
-=======
-            $table->increments('id');
->>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
             $table->string('package_name');
             $table->string('package_type');
             $table->string('package_location');
