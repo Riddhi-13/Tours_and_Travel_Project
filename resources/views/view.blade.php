@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
   <title>View</title>
+=======
+  <title>Home</title>
+>>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<<<<<<< HEAD
+=======
+  <link type="text/css" rel="stylesheet" href="css/view.css" />
+>>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
   </head>
 
 <body>
@@ -18,6 +26,7 @@
       <a class="navbar-brand" href="#">Travels</a>
     </div>
     <ul class="nav navbar-nav">
+<<<<<<< HEAD
       <li class="active"><a href="home">Home</a></li>
       <li class="active2"><a href="view">Tour Packages</a></li>
       <li class="active2"><a href="historyDisplay">Travel History</a></li>
@@ -39,6 +48,16 @@
                 </ul>
               </li>
               @endguest
+=======
+      <li class="active"><a href="#">Home</a></li>
+      <li class="active2"><a href="#">Tour Packages</a></li>
+     
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+>>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
     </ul>
   </div>
 </nav>
@@ -47,12 +66,19 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<<<<<<< HEAD
 
   <link type="text/css" rel="stylesheet" href="css/view.css" />
+=======
+>>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
   
 </h2>
 
 <body>
+<<<<<<< HEAD
+=======
+
+>>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
 <div class="container">
 
 <h1 class="text-center" style="font-weight:bold; font-size: 30px; margin-bottom:4%">Package List</h1>
@@ -62,7 +88,12 @@
     @foreach($packages as $item)
       <div class="heading">
         <div class="col-md-3 room-left   ">
+<<<<<<< HEAD
           <img src="{{ asset('uploads/package/' . $item['package_image']) }}" class="img-responsive" alt="">
+=======
+          <img src="{{ asset('uploads/package/' . $item['package_image']) }}" class="img-responsive" alt="" style="height: 154px;
+    width: 255px;">
+>>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
         </div>
         <div class="col-md-6 room-midle " style="font-size: 15px;">
           <p> <b>Package Name:</b>{{$item['package_name']}}</p>

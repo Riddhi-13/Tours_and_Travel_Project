@@ -21,11 +21,18 @@ class ViewController extends Controller
 
 public function detail($id){
 
+<<<<<<< HEAD
     
+=======
+>>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
     $data = Package::find($id);
 
     return view('detail',['packages'=>$data]);
     
 }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
 }

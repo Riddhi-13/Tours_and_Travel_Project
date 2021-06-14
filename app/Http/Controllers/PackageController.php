@@ -4,8 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Package;
+<<<<<<< HEAD
 use App\Models\Booking;
 use Auth;
+=======
+>>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
 
 class PackageController extends Controller
 {
@@ -13,8 +16,12 @@ class PackageController extends Controller
     {
         return view('package');
     }
+<<<<<<< HEAD
    
    
+=======
+    
+>>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
   public function store(Request $req)
     {
         
@@ -39,6 +46,7 @@ class PackageController extends Controller
         
         
         $package->save();
+<<<<<<< HEAD
         
         return back()->with('message','Inserted successfully',$package);
     }
@@ -47,6 +55,11 @@ class PackageController extends Controller
     
 
 
+=======
+        return view('/package')->with('package',$package);
+    }
+
+>>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
         public function display()
         {
             $packages=package::all();
@@ -83,6 +96,7 @@ class PackageController extends Controller
            
         }
         $packages->save();
+<<<<<<< HEAD
         return redirect('/updatePackage')->with('message','Updated successfully',$packages);
         
     }
@@ -182,6 +196,14 @@ class PackageController extends Controller
        
         
 
+=======
+        return redirect('/updatePackage')->with('packages',$packages);
+    }
+
+       
+        
+}
+>>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
         
     
 

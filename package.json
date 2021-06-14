@@ -10,6 +10,7 @@
         "production": "mix --production"
     },
     "devDependencies": {
+<<<<<<< HEAD
         "@tailwindcss/forms": "^0.2.1",
         "alpinejs": "^2.7.3",
         "autoprefixer": "^10.1.0",
@@ -27,5 +28,11 @@
         "tailwindcss": "^2.0.2",
         "vue": "^2.6.12",
         "vue-template-compiler": "^2.6.12"
+=======
+        "axios": "^0.21",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14"
+>>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
     }
 }
