@@ -58,7 +58,9 @@ Route::put('/updateimage/{id}',[PackageController::class,'update']);
 Route::get('/deleteimage/{id}',[PackageController::class,'delete']);
 
 Route::view('contact','contact');
- Route::post('submit',[App\Http\Controllers\ContactController::class, 'save']);
+Route::post('submit',[App\Http\Controllers\ContactController::class, 'save']);
+
+Route::get('/displayEnquiry',[ContactController::class,'display']);
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

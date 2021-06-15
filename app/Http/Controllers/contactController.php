@@ -14,7 +14,14 @@ class contactController extends Controller
         $contact->subject = $req->subject;
         $contact->message = $req->message;
         $contact->save();
-        return back()->with('message','Data Insert successfully',$contact);
+        return back()->with('message','Enquiry Submitted successfully',$contact);
      }
+
+     public function display()
+        {
+            $contacts=Contact::all();
+            return view('displayEnquiry')->with('contacts',$contacts);
+           
+        }
     
 }

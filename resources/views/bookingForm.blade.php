@@ -109,7 +109,13 @@
                                 <span class="hide-menu">Manage Booking</span>
                             </a>
                         </li>
-                        
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="displayEnquiry"
+                                aria-expanded="false">
+                                <i class="fa fa-table" aria-hidden="true"></i>
+                                <span class="hide-menu">View Enquiries</span>
+                            </a>
+                        </li>
                         
                     </ul>
 

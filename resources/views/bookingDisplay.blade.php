@@ -108,7 +108,13 @@
                                 <span class="hide-menu">Manage Booking</span>
                             </a>
                         </li>
-                        
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="displayEnquiry"
+                                aria-expanded="false">
+                                <i class="fa fa-table" aria-hidden="true"></i>
+                                <span class="hide-menu">View Enquiries</span>
+                            </a>
+                        </li>
                         
                     </ul>
 
@@ -128,7 +134,7 @@
             <div class="page-breadcrumb bg-white">
                 <div class="row align-items-center">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Manage Package</h4>
+                        <h4 class="page-title">Manage Booking</h4>
                     </div>
                 </div>
                
