@@ -13,9 +13,12 @@ class DashboardController extends Controller
 {
     public function index(){
         if(Auth::user()->hasRole('user')){
-            return view('home');
+            return view('home2');
     }elseif(Auth::user()->hasRole('admin')){
-        return view('dashboard');
+        $data1 = DB::table('packages')->count();
+        $data2=DB::table('users')->count();
+        $data3=DB::table('booking')->count();
+        return view('dashboard',compact('data1','data2','data3'));
         }
     
     }

@@ -19,6 +19,8 @@ class Contact extends Migration
             $table->string('email');
             $table->string('subject');
             $table->string('message');
+            $table->integer('user_id')->unsigned();
+            $table->string('reply')->nullable();
             $table->timestamps();
         });
     }

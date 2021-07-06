@@ -61,7 +61,10 @@ Route::view('contact','contact');
 Route::post('submit',[App\Http\Controllers\ContactController::class, 'save']);
 
 Route::get('/displayEnquiry',[ContactController::class,'display']);
+Route::get('/replyEnquiry/{id}',[ContactController::class,'reply']);
+Route::put('/updateEnquiry/{id}',[ContactController::class,'update']);
 
+Route::get('/viewReply',[App\Http\Controllers\ContactController::class, 'view']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

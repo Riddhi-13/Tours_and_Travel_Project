@@ -115,7 +115,7 @@
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="displayEnquiry"
                                 aria-expanded="false">
                                 <i class="fa fa-table" aria-hidden="true"></i>
-                                <span class="hide-menu">View Enquiries</span>
+                                <span class="hide-menu">Manage Enquiries</span>
                             </a>
                         </li>
                         

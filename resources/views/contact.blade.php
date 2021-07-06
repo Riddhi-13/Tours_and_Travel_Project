@@ -20,8 +20,11 @@
     <ul class="nav navbar-nav">
       <li class="active"><a href="home">Home</a></li>
       <li class="active2"><a href="view">Tour Packages</a></li>
-     
+      <li class="active3"><a href="historyDisplay">Travel History</a></li>
+      <li class="active4"><a href="viewReply">View Reply</a></li>
       <li><a href="contact">Contact Us</a></li>
+     
+      
     </ul>
     <ul class="nav navbar-nav navbar-right">
     @guest
@@ -74,6 +77,10 @@
                     <div class="card-body">
                         <form action="submit" method="post" >
                         {{csrf_field()}}
+                        {{method_field('PUT')}}
+                        <input type="hidden"  class="form-control" name="id">
+
+									      <input type="hidden"  class="form-control" name="user_id">
                             
                             <input type="text" name="name" placeholder="Name" class="form-control mb-2 form-input" required>
                            

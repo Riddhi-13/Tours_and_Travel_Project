@@ -30,7 +30,7 @@
       <li class="active"><a href="hoome">Home</a></li>
       <li class="active2"><a href="view">Tour Packages</a></li>
 	  <li class="active3"><a href="historyDisplay">Travel History</a></li>
-     
+      <li class="active4"><a href="viewReply">View Reply</a></li>
       <li><a href="contact">Contact Us</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
