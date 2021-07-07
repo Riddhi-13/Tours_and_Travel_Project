@@ -16,7 +16,7 @@
     
     
     
-    <!-- Main wrapper - style you can find in pages.scss -->
+   
    
     <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
         data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
@@ -186,6 +186,33 @@
               
                
             </div>
+            <div class="container">
+               <table class="table table-stripped table-bordered">
+               <thead class="thead-dark">
+               <tr> 
+                    <th scope="col">Id</th>  
+                    <th scope="col">Booking Id</th>  
+                    <th scope="col">User Id</th>  
+                    <th scope="col">Card No</th>  
+                    <th scope="col">Name</th>  
+                    <th scope="col">Package Price</th>  
+                </tr>
+                </thead>
+                <tbody>
+                    @foreach($payment as $payments)
+                    <tr>
+                    <th >{{$payments->id}}</th> 
+                    <th >{{$payments->booking_id}}</th>
+                    <th >{{$payments->user_id}}</th>  
+                    <th >{{$payments->card_no }}</th>  
+                    <th >{{$payments->cardholder_name}} </th>  
+                    <th >{{$payments->package_price}}</th>  
+        
+                    @endforeach
+                    </tbody>
+                    </table>
+                </div>
+        </div>
          
             
             
@@ -200,6 +227,7 @@
     <!-- End Wrapper -->
    
     <!-- All Jquery -->
+   
     
     
     

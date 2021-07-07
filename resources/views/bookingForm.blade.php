@@ -158,13 +158,18 @@
                             <input type="hidden"class="form-control" name="id" id="id" value="{{$bookings->id}}">
                             
                             <div class="form-group">
-                            <label for="packages_id">Package ID</label>
-                            <input type="text" class="form-control" name="package_name" value="{{$bookings->package_name}}"  required>
+                            <label for="packages_id">Package Name: {{$bookings->package_name}}</label><br>
+                
+                    
                             </div>
                             
                             <div class="form-group">
-                            <label for="status">Status</label>
-                            <input type="text" class="form-control" name="status" value="{{$bookings->status}}"  required>
+                            <label for="status">Status</label><br>
+                            
+                            <input type="radio" class="radio" name="status" id="status1" value="Confirm" reuired>
+                            <label for="status1"> confirm</label><br>
+                            <input type="radio"class="radio" name="status" id="status2" value="Cancelled">
+                            <label for="status2"> cancel</label><br>
                             </div>
                         
                             <button type="submit" class="btn btn-primary"style="padding: 5px 50px;font-size:18px;">Update</button>

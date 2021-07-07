@@ -6,7 +6,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  
+  <link rel="stylesheet" href="css\video.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
 
@@ -15,7 +15,7 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Travels</a>
+      <a class="navbar-brand" href="home">Travels</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="home">Home</a></li>
@@ -51,7 +51,20 @@
 </h2>
 
 <body>
+<div class ="vid">
+      <video autoplay loop muted>
+      <source src="img/Video2.mp4" type="video/mp4">
+      </video>   
+    
+      <div class="con">
+        <h1>Tours & Travels</h1>
+        <h3>We Find What you Love... </h3><br>
+        <button href="view" >Explore</button>
+      </div>
+    </div><br>
+
 <div class="container">
+
  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->

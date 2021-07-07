@@ -16,7 +16,7 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Travels</a>
+      <a class="navbar-brand" href="home">Travels</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="home">Home</a></li>
@@ -79,8 +79,9 @@
 				</div>
 				<div class="col-md-3 room-right wow fadeInRight animated" data-wow-delay=".5s">
 					<h5>Rs. {{$item->package_price}}</h5>
+          <a href="{{$item['package_link']}}" class="view"><button class="btn btn-primary"> Take Tour</button></a>
 					 <a href="detail/{{$item['id']}}" class="view"><button class="btn btn-primary"> Detail</button></a>
-
+           
 				</div>
 				<div class="clearfix"></div>
                 @endforeach

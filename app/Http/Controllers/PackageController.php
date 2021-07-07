@@ -25,7 +25,7 @@ class PackageController extends Controller
         $package->package_price=$req->input('package_price');
         $package->package_features=$req->input('package_features');
         $package->package_details=$req->input('package_details');
-        
+        $package->package_link=$req->input('package_link');
         if($req->hasfile('package_image')){
             $file=$req->file('package_image');
             $extension=$file->getClientOriginalExtension();
@@ -73,7 +73,7 @@ class PackageController extends Controller
             $packages->package_price=$req->input('package_price');
             $packages->package_features=$req->input('package_features');
             $packages->package_details=$req->input('package_details');
-
+            $packages->package_link=$req->input('package_link');
             if($req->hasfile('package_image')){
                 $file=$req->file('package_image');
                 $extension=$file->getClientOriginalExtension();
@@ -121,6 +121,8 @@ class PackageController extends Controller
            $booking->children=$req->input('children');
            $booking->email=$req->input('email');
            $booking->phone=$req->input('phone');
+           $booking->package_price=$req->input('package_price');
+
            
         
          /*   $booking->packages()->associate($package); */

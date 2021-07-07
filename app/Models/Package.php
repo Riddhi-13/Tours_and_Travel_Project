@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Package extends Model
 {
     protected $table='packages';
-    protected $fillable=['package_name','package_type','package_location','package_price','package_features','package_details','package_image'];
+    protected $fillable=['package_name','package_type','package_location','package_price','package_features','package_details','package_link','package_image'];
     
     public function booking()
     {

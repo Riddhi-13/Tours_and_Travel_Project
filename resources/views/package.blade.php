@@ -190,6 +190,10 @@
                               <textarea class="form-control" name="package_details" rows="4" placeholder="Enter package details" required></textarea>
                               
                               </div>
+                              </div>
+                              <div class="form-group">
+                              <label for="package_link">Package Link</label>
+                              <textarea class="form-control" name="package_link" rows="4" placeholder="Enter package link" ></textarea>
                               <div class="form-group">
                               <label for="package_image">Package Image</label>
                               <input type="file" class="form-control-file" name="package_image" required >

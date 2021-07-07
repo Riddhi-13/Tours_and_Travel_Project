@@ -13,10 +13,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-<<<<<<< HEAD
         $this->call(LaratrustSeeder::class);
-=======
-        // \App\Models\User::factory(10)->create();
->>>>>>> b08ba81701e5166203f3372bc202fec9d50f196e
     }
 }

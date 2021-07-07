@@ -21,6 +21,7 @@
       <li class="active"><a href="home">Home</a></li>
       <li class="active2"><a href="view">Tour Packages</a></li>
       <li class="active3"><a href="historyDisplay">Travel History</a></li>
+      <li class="active4"><a href="viewReply">View Reply</a></li>
       <li><a href="#">Contact Us</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
@@ -70,7 +71,7 @@
                     <th scope="col">Phone</th> 
                     <th scope="col">Status</th>
                     <th>Cancel Booking</th>
-                   
+                    <th>Pay</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -86,9 +87,19 @@
                     <th >{{$booking->status}}</th>
                     
                   
+                    
+                    @if($booking->status=="Confirm")
+                    <th></th>
+                    <th><a href="#" class="btn btn-success">PAID</a></th>
+                    @elseif($booking->status=="Cancelled")
+          
+                    <th><a href="/contact" class="btn btn-success">CANCEL</a></th>
+                    @else
                     <th><a href="/cancelBooking/{{$booking->id}}" class="btn btn-success">CANCEL</a></th>
-                 
+                    <th><a href="payment/{{$booking->id}}" class="btn btn-success">PAY</a></th>
+                    
                     </tr>
+                    @endif
                     @endforeach
                     </tbody>
                     </table>

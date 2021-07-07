@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 
     <title>Admin</title>
     <link rel="canonical" href="https://www.wrappixel.com/templates/ample-admin-lite/" />
    
     <!-- Custom CSS -->
-   <link href="css/style.min.css" rel="stylesheet">
+    <link href="{{ asset('css/style.min.css')}}" rel="stylesheet">
    
 </head>
 
@@ -161,7 +161,7 @@
                     <th scope="col">Package location</th>  
                     <th scope="col">Package price </th>  
                     <th scope="col">Package features </th>  
-                    
+                    <th scope="col">Package Link </th> 
                     <th scope="col">Package image</th> 
                     <th>EDIT</th>
                     <th>DELETE</th>
@@ -176,7 +176,7 @@
                     <th >{{$package->package_location}}</th>  
                     <th >{{$package->package_price }}</th>  
                     <th >{{$package->package_features}} </th>  
-                    
+                    <th >{{$package->package_link}} </th>
                     <th ><img src="{{asset('uploads/package/' . $package->package_image)}}"width="100px;" height="100px;" alt="Image"></th> 
                     <th><a href="/editimage/{{$package->id}}" class="btn btn-success">EDIT</a></th>
                     <th><a href="/deleteimage/{{$package->id}}" class="btn btn-danger">DELETE</a></th>

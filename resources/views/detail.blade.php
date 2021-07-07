@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Home</title>
+  <title>Package Details</title>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -98,7 +98,7 @@
                   
             
                     
-                    <a href="/bookTour/{{$packages['id']}}" class="bookTour"><button   class="btn-primary btn" style="margin-left: 42%;margin-top: 4%; font-size: 20px;">Book</button></a>
+                    <a href="/bookTour/{{$packages['id']}}" class="bookTour"><button   class="btn-primary btn" style="margin-left: 45%;margin-top: 4%; font-size: 20px;">Book</button></a>
                    
                     
 

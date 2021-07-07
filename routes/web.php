@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PackageController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FullCalenderController;
+use App\Http\Controllers\PaymentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,6 +29,9 @@ Route::get('/newReg',function(){
     return view('newReg');
 });
 
+
+Route::get('payment/{id}',[App\Http\Controllers\PaymentController::class,'index'])->name('payment');
+Route::put('payform/{id}',[App\Http\Controllers\PaymentController::class,'addPayment']);
 
 
 Route::get('/historyDisplay',[App\Http\Controllers\PackageController::class, 'viewTicket']);
@@ -68,5 +73,5 @@ Route::get('/viewReply',[App\Http\Controllers\ContactController::class, 'view'])
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-require __DIR__.'/auth.php';
 
+require __DIR__.'/auth.php';

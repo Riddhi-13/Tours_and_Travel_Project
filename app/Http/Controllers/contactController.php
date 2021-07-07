@@ -22,6 +22,7 @@ class contactController extends Controller
 
      public function display()
         {
+            
             $contacts=Contact::all();
             return view('displayEnquiry')->with('contacts',$contacts);
            
@@ -47,7 +48,10 @@ class contactController extends Controller
 
         public function view()
         {
-           
+            if(Auth::guest())
+            {
+                return redirect('/newlog');
+            }
            
             $contacts = Contact::where('user_id', Auth::user()->id)->paginate(10);
            

@@ -189,6 +189,11 @@
                             </div>
 
                             <div class="form-group">
+                            <label for="package_link">Package link</label>
+                            <textarea type="text" class="form-control" rows="4" name="package_link" placeholder="Enter package link" > {{$packages->package_link}}</textarea>
+                            </div>
+
+                            <div class="form-group">
                             <label for="package_image">Package Image</label>
                             <input type="file" class="form-control-file" name="package_image" >{{$packages->package_image}}
                             </div>

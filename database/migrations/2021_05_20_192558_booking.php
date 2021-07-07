@@ -18,6 +18,7 @@ class Booking extends Migration
             $table->integer('packages_id')->unsigned()->index()->nullable();
             $table->foreign('packages_id')->references('id')->on('packages');
             $table->string('package_name')->nullable();
+            $table->string('package_price')->nullable();
             $table->string('from');
             $table->string('to');
             $table->string('adults');

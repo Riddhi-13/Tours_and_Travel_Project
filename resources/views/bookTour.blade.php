@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Home</title>
+  <title>Book Tour</title>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -81,6 +81,7 @@
 									<input type="hidden"  class="form-control" name="id">
 									<input type="hidden"  class="form-control" name="user_id">
 									<input type="hidden"  class="form-control" name="package_name"value= "{{$packages->package_name}}">
+									<input type="hidden"  class="form-control" name="package_price"value= "{{$packages->package_price}}">
 										<span class="form-label">From</span>
 										<input class="form-control" type="date" name="from" required>
 									</div>
